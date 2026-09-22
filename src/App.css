@@ -1,0 +1,35 @@
+main {
+  width: min(700px, 100% - 40px);
+  text-align: center;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin: 25px 0;
+}
+
+.card {
+  border: 1px solid #cccccc;
+  padding: 15px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+button {
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .cards,
+  .buttons {
+    grid-template-columns: 1fr;
+    flex-direction: column;
+  }
+}
